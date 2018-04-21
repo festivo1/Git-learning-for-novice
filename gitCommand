@@ -78,6 +78,11 @@ git log author="festivo1" -----shows the changes done by author festivo1
 Edit the file on repository:
 Differences of file on main repository and your file in local repository
 command: git diff
+	git add .
+	git commit -m "second commit" // until you hit this command no changes in the git repositories but remember one thing git diff doesn't show any difference for the staged files
+
 Changes more than one files:
 same procedure
 
+How to see the diff on staging area and git repositories
+git diff --staged
