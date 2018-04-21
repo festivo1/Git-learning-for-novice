@@ -1,22 +1,42 @@
-git init
-vim utsav.txt
-git status
+git init   //make a .git hidden folder in your local repo
+vim utsav.txt  // create a file 
+git status   // checking the stauts of the file whether it is ready to commit to the github or not
+ahele unstage cha stage garna ko lagi 
+git add utsav.txt //to stage file-name 
+or
+git add .
+or
+git add --all sab files ko lagi 
+
 git config --global user.name "festivo1"
 git config --global user.name "utsavbhetwal2008@yahoo.com"
-git commit -m "Inital commit"
+
+git commit -m "Inital commit" // commit the staged files to master and provide the name "initial commit" as a first commit
+If second time "second commit" 
+
 git log   ------------to see the time of commit
+
 git remote -v -------------to see the local repo ko naam
+
 no name given so blanK.
 solution:
 create a remote repository as Github-learning in github and connect local  repository by following command:
+
 git remote add origin https://github.com/festivo1/Github-learning.git
 
-After connection push the local repository to remote:
-git push origin master ----------origin is the local repository name or branch and master is the remote master branch
+To remove the connection with the master:
+git remote remove origin
+
+Here origin is the name given. YOu can type any name 
+After connection, push the local repository to remote:
+
+git push origin master ----------origin is the local repository name or 
+
+branch and master is the remote master branch
 Then asks for username and password
 
 Username for 'https://github.com': festivo1
-Password for 'https://festivo1@github.com': 
+Password for 'https://festivo1@github.com': Eloquence2
 Counting objects: 5, done.
 Delta compression using up to 8 threads.
 Compressing objects: 100% (4/4), done.
@@ -30,4 +50,30 @@ Note:
 create .gitignore file so that the files inside this folder won't be pushed to github 
 
 
+Deploying to heroku
+--------------------------------------
+
+git init   //make a .git hidden folder in your local repo
+vim utsav.txt  // create a file 
+git status   // checking the stauts of the file whether it is ready to commit to the github or not
+ahele unstage cha stage garna ko lagi 
+git add utsav.txt //to stage file-name 
+or
+git add .
+or
+git add --all sab files ko lagi 
+git commit -m "Inital commit"
+heroku create dipoapp
+git push heroku master
+heroku ps:scale web=1
+heroku open
+
+
+
+more on git:
+git log --------shows the history
+git log author="festivo1" -----shows the changes done by author festivo1
+
+
+Edit the file on repository:
 
