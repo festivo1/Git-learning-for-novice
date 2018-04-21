@@ -86,3 +86,16 @@ same procedure
 
 How to see the diff on staging area and git repositories
 git diff --staged
+
+
+How to remove files:
+command:git rm fileName.txt // remove the file from git repository and working copy but it really deletes after commiting
+git commit -m "deletes the file called fileName.txt"
+
+
+renaming the file:
+command: git mv second.txt pudding.txt  //moving is like renaming
+everything you have done must be commited to have changes in teh file
+
+
+command: git checkout -- index.html // this command takes out index.html from the git repository into the current working directory. used for undo changes
