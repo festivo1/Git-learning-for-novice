@@ -78,4 +78,6 @@ git log author="festivo1" -----shows the changes done by author festivo1
 Edit the file on repository:
 Differences of file on main repository and your file in local repository
 command: git diff
+Changes more than one files:
+same procedure
 
