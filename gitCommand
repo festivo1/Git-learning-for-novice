@@ -99,3 +99,24 @@ everything you have done must be commited to have changes in teh file
 
 
 command: git checkout -- index.html // this command takes out index.html from the git repository into the current working directory. used for undo changes
+
+
+Command to unstage the staged files
+command: git reset HEAD fileName.txt
+
+
+creating new branch and merging it into the master branch
+
+       git checkout -b dwav1.0
+ 2036  ls
+ 2037  vim newfile.txt 
+ 2039  git commit -a -m "created new branch"
+ 2041  git checkout master 
+ 2042  git merge dwav1.0 
+ 2043  ls
+ 2044  vim newfile.txt 
+ 2046  git remote add origin https://github.com/festivo1/distributorwebapp
+ 2045  git push origin master
+
+pushing created branch to github:
+command: git push origin dwav1.0
