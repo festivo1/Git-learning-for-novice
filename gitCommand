@@ -36,7 +36,7 @@ branch and master is the remote master branch
 Then asks for username and password
 
 Username for 'https://github.com': festivo1
-Password for 'https://festivo1@github.com': Eloquence2
+Password for 'https://festivo1@github.com':-----------
 Counting objects: 5, done.
 Delta compression using up to 8 threads.
 Compressing objects: 100% (4/4), done.
