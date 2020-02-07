@@ -99,3 +99,20 @@ everything you have done must be commited to have changes in teh file
 
 
 command: git checkout -- index.html // this command takes out index.html from the git repository into the current working directory. used for undo changes
+
+command:The git stash command takes your uncommitted changes 
+(both staged and unstaged), saves them away for later use, and then reverts them 
+from your working copy.
+-->git stash
+
+After git stash, you're free to make changes, create new commits, 
+switch branches, and perform any other Git operations; then come back
+and re-apply your stash when you're ready.
+
+Re-applying your stashed changes
+You can reapply previously stashed changes with git stash pop:
+
+All files need to be staged before stash. 
+
+Git tagging: 
+tag on the branch on versioning
